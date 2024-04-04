@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function tinhChuViDienTichHcn(chieuDai, chieuRong) {
+    let chuVi = 2 * (chieuDai + chieuRong);
+    let dienTich = chieuDai * chieuRong;
+    return [chuVi, dienTich];
+}
+
+let chieuDai = parseFloat(prompt("Nhập chiều dài của hình chữ nhật: "));
+let chieuRong = parseFloat(prompt("Nhập chiều rộng của hình chữ nhật: "));
+
+let [chuVi, dienTich] = tinhChuViDienTichHcn(chieuDai, chieuRong);
+
+console.log("Chu vi của hình chữ nhật là: " + chuVi);
+console.log("Diện tích của hình chữ nhật là: " + dienTich);
+// Tinh chu vi va dien tich hinh tron
+function tinhChuViDienTichHinhTron(banKinh) {
+    let chuVi = 2 * Math.PI * banKinh;
+    let dienTich = Math.PI * Math.pow(banKinh, 2);
+    return [chuVi, dienTich];
+}
+
+let banKinh = parseFloat(prompt("Nhập bán kính của hình tròn: "));
+
+let [chuVi, dienTich] = tinhChuViDienTichHinhTron(banKinh);
+
+console.log("Chu vi của hình tròn là: " + chuVi);
+console.log("Diện tích của hình tròn là: " + dienTich);
+
+
+    </script>
+</body>
+</html>
